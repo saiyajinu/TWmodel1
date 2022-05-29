@@ -1,0 +1,9 @@
+.dreptunghi{
+    border: 1px black dotted;
+    width: 5%;
+    height: 20px;
+    background-color: aqua;
+    margin-right: 10px;
+    margin-left: 10px;
+    display:inline-block;
+}

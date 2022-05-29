@@ -1,0 +1,29 @@
+div > div{
+    border: 7px black double;
+    font-size: 15px;
+    transition-duration: 3s;
+}
+#container{
+    display: grid;
+    height: 50vh;
+    width: 250px;
+    border: 1px blue dotted;
+}
+
+
+#unu{grid-area: 2 / 1 / 3 / 2}
+#doi{grid-area: 1 / 2 / 2 / 3}
+#trei{grid-area: 2 / 2 / 3 / 3}
+#patru{grid-area: 3 / 2 / 4 / 3}
+#cinci{grid-area: 1 / 3 / 4 / 4}
+
+@media only screen and (max-width: 600px) {
+    @media screen and (max-height: 500px){
+        #container{
+            display: block;
+        }
+        div > div:hover{
+            font-size:30px;
+        }
+    }
+}
