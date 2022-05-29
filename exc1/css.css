@@ -1,0 +1,63 @@
+#container{
+    background-color: green;
+    border: solid black 1px;
+}
+
+ 
+    #container{
+        background-color: green;
+        border: solid black 1px;
+        width: 50%;
+        
+    }
+    
+    body{
+        animation-name: backgroundcolor;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+    }
+    
+    @keyframes  backgroundcolor{
+        0%{background-color: white;}
+        100%{background-color: yellow;}
+    }
+
+
+@media screen and (min-width: 800px) {
+    body{
+        animation: none;
+        background-color: white;
+    }
+    
+    #container{
+        position: relative;
+        width: 500px;
+        height: 500px;
+        margin-left: auto;
+        margin-right: auto;
+        font-size:0;
+    }
+
+    .square:nth-child(odd){
+        overflow: hidden;
+        width: 19%;
+        border: solid red 1px;
+        height: 100%;
+        font-size: 20px;
+        display: inline-block;
+    }
+
+    .square:nth-child(even){
+        overflow: hidden;
+        width: 19%;
+        border: solid blue 1px;
+        height: 100%;
+        font-size: 20px;
+        display: inline-block;
+    }
+}
+
+
+
+
